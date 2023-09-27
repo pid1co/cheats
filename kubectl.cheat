@@ -1,4 +1,4 @@
 % kubectl, imperative
 
 # Start a pod using imperative kubectl command and an interactive shell
-kubectl run alpine --image=alpine:latest -n <namespace> /bin/sh
+kubectl run -it alpine --image=alpine:latest -n <namespace> -- /bin/sh
